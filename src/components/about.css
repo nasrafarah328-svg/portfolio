@@ -1,0 +1,59 @@
+.selection-selection-wrapper {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #8C5A2E;
+}
+.selection-main-about-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.selection-text-content {
+  padding: 10px 20px;
+  position: relative;
+  max-width: 800px;
+  text-align: center;
+}
+
+.selection-paragraph {
+  font-size: 1rem;
+  max-width: 600px;
+  font-family: "Nunito";
+}
+
+.selection-UX-front-end-developer {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.selection-text-wrapper-three {
+  font-weight: 700;
+  font-family: "Raleway";
+}
+
+@media screen and (min-width: 768px) {
+  .selection-main-about-banner {
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 100px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .selection-text-content {
+    padding: 60px 20px;
+    position: relative;
+    text-align: left;
+  }
+}

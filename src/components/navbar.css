@@ -1,0 +1,129 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 40px;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #111;
+  font-family: "Nunito";
+  margin-right: 18px;
+}
+.nav-left a.active {
+  font-weight: bold;
+  color: #946247;
+}
+
+
+.nav-right {
+  margin-left: auto;
+}
+
+.nav-right img {
+  height: 40px;
+  display: block;
+  margin: auto;
+}
+
+.dropdown-icon {
+  display: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #111;
+  font-family: 'Nunito', Helvetica;
+  font-size: 16px;
+  margin-bottom: 10px;
+  
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-right button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+}
+
+.hamburger-line {
+  background-color: #111;
+  height: 2px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #111;
+  font-family: 'Nunito', Helvetica;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+  color: #0077cc;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-left {
+    display: none;
+  }
+
+  .dropdown-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  .dropdown-menu a {
+    text-decoration: none;
+    color: #111;
+    font-family: 'Nunito', Helvetica;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+}
