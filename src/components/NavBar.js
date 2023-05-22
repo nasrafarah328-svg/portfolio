@@ -55,6 +55,7 @@ function Navbar() {
         <img
           className={"selection-github"}
           src={"Github.svg"}
+          alt=""
         />
       </a>
 
