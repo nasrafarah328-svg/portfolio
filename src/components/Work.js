@@ -14,6 +14,7 @@ const projects = [
     imageSrc: "hello-dear.png",
     githubLink: "https://www.algonquincollege.com/college-blog/ac-students-tackle-senior-isolation-and-loneliness-with-mobile-application/",
   },
+
   {
     title: "Music Playlist",    
     headerQuote:"A simple MP3 personalized playlist.",
@@ -24,7 +25,17 @@ const projects = [
     imageSrc: "music.png",
     githubLink: "https://nasra-playlist.netlify.app/",
   },
-  // Add more projects as needed
+  {
+    title: "CareSpace",
+    headerQuote:"Senior Care App Case Study.",
+    subTitle: "About",
+    description:
+      "Witness how I applied user-centered methodologies, inclusive design principles, and iterative improvements to enhance the experience for seniors and their caregivers.",
+      moreText:
+      "Discover my compelling case study on the UX design process of a senior care app, by clicking on the link below.",
+    imageSrc: "carespace.png",
+    githubLink: "https://docs.google.com/presentation/d/142ijd0A59bza0p0cSW5b2Cp_3g6fa-fH8Zx5KHzjtRM/edit?usp=share_link",
+  },
 ];
 
 function Project({ title, headerQuote, subTitle, description, moreText, imageSrc, githubLink }) {
