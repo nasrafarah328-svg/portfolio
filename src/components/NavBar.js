@@ -51,11 +51,10 @@ function Navbar() {
           Work
         </a>
       </div>
-      <a href="https://github.com/Fara0197" target="_blank">
+      <a href="https://github.com/Fara0197"rel="noreferrer" target="_blank">
         <img
           className={"selection-github"}
           src={"Github.svg"}
-          alt={"github-image"}
         />
       </a>
 
