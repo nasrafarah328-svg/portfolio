@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import "./home.css";
 import { motion } from "framer-motion";
 import { FaFigma } from "react-icons/fa";
@@ -14,7 +14,7 @@ import { SiSwift } from "react-icons/si";
 import { SiVisualstudio } from "react-icons/si";
 import { SiAndroid } from "react-icons/si";
 import { SlPeople } from "react-icons/sl";
-import {HiOutlineArrowLongRight} from "react-icons/hi2"
+import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 function Home() {
   return (
@@ -61,11 +61,15 @@ function Home() {
         />
       </div>
 
-      <div className= "selection-bottom-screen">
+      <div className="selection-bottom-screen">
         {" "}
         <div className="selection-row-header-container">
           <h1 className="selection-row-header">My Skills</h1>{" "}
-          <p className="selection-row-text"><Link to ="./work">view my work <HiOutlineArrowLongRight /> </Link></p>
+          <p className="selection-row-text">
+            <Link to="./work">
+              view my recent work <HiOutlineArrowLongRight />{" "}
+            </Link>
+          </p>
         </div>{" "}
         <div className="selection-main-home-rows">
           <div className="selection-row">
