@@ -5,40 +5,51 @@ import "./work.css";
 const projects = [
   {
     title: "Hello Dear",
-    headerQuote:"A mobile app that enhances senior well-being.",
+    headerQuote: "A mobile app that enhances senior well-being.",
     subTitle: "About",
     description:
-      "In my final semester, several classmates and I were paired with a client to design and develop a mobile application. My role was the UX Designer and Front End Developer.",
-      moreText:
+      "Throughout my role as a UX/Front End Developer, I applied a range of technical skills to drive successful outcomes. I implemented accessibility best practices, ensuring a seamless experience for senior users. By actively incorporating client feedback into design iterations, I delivered tailored solutions that met their specific needs. Collaborating with a cross-functional team, I created wireframes and prototypes using tools like Figma. With expertise in technologies such as React Native and CSS, I developed and implemented responsive user interfaces. Staying updated on emerging trends, I consistently leveraged the latest tools and frameworks to deliver cutting-edge solutions. My technical proficiency, combined with a client-centric approach, has consistently driven impactful results.",
+    moreText:
       "Our client had a vision to introduce a senior-focused mobile application that would solve senior loneliness. You can find an article about Hello Dear below.",
     imageSrc: "hello-dear.png",
-    githubLink: "https://www.algonquincollege.com/college-blog/ac-students-tackle-senior-isolation-and-loneliness-with-mobile-application/",
+    githubLink:
+      "https://www.algonquincollege.com/college-blog/ac-students-tackle-senior-isolation-and-loneliness-with-mobile-application/",
   },
 
   {
-    title: "Music Playlist",    
-    headerQuote:"A simple MP3 personalized playlist.",
+    title: "Music Playlist",
+    headerQuote: "A simple MP3 personalized playlist.",
     subTitle: "About",
     description:
       "The Music Playlist is a fully functional HTML5 music player that allows users to play and control a playlist of MP3 files. It features a mobile-first design, complete with CSS animations, and is powered by JavaScript controls. ",
-      moreText:"The playlist can be accessed through a user-friendly interface. Click the link below to view the playlist.",
+    moreText:
+      "The playlist can be accessed through a user-friendly interface. Click the link below to view the playlist.",
     imageSrc: "music.png",
     githubLink: "https://nasra-playlist.netlify.app/",
   },
   {
     title: "CareSpace",
-    headerQuote:"Senior Care App Case Study.",
+    headerQuote: "Senior Care App Case Study.",
     subTitle: "About",
     description:
       "Witness how I applied user-centered methodologies, inclusive design principles, and iterative improvements to enhance the experience for seniors and their caregivers.",
-      moreText:
+    moreText:
       "Discover my compelling case study on the UX design process of a senior care app, by clicking on the link below.",
     imageSrc: "carespace.png",
-    githubLink: "https://docs.google.com/presentation/d/142ijd0A59bza0p0cSW5b2Cp_3g6fa-fH8Zx5KHzjtRM/edit?usp=share_link",
+    githubLink:
+      "https://docs.google.com/presentation/d/142ijd0A59bza0p0cSW5b2Cp_3g6fa-fH8Zx5KHzjtRM/edit?usp=share_link",
   },
 ];
 
-function Project({ title, headerQuote, subTitle, description, moreText, imageSrc, githubLink }) {
+function Project({
+  title,
+  headerQuote,
+  subTitle,
+  description,
+  moreText,
+  imageSrc,
+  githubLink,
+}) {
   return (
     <div className="selection-project-wrapper">
       <div className="selection-project-text">
@@ -66,7 +77,10 @@ function CustomPagination() {
 
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
-  const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
+  const currentProjects = projects.slice(
+    indexOfFirstProject,
+    indexOfLastProject
+  );
 
   const totalPages = Math.ceil(projects.length / projectsPerPage);
 
@@ -99,7 +113,9 @@ function CustomPagination() {
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index}
-            className={`pagination-item ${currentPage === index + 1 ? "active" : ""}`}
+            className={`pagination-item ${
+              currentPage === index + 1 ? "active" : ""
+            }`}
             onClick={() => handlePageChange(index + 1)}
           >
             {index + 1}
