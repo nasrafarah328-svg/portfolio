@@ -89,10 +89,9 @@ function Home() {
               <SiCss3 className="skills-icon" />
               <SiJavascript className="skills-icon" />
               <SiReact className="skills-icon" />
-              <SiFirebase className="skills-icon" />
               <SiVisualstudio className="skills-icon" />
               <SiGit className="skills-icon" />
-              <SiNetlify className="skills-icon" />
+          
             </p>
           </div>
           <div className="selection-row">

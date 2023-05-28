@@ -38,7 +38,7 @@ function About() {
             <span className="selection-text-wrapper-five">
               {" "}
               <a
-                href="https://drive.google.com/file/d/1k74KPqtyPzoX2yJsnWvD-BNBEubpryK4/view?usp=sharing"
+                href="https://drive.google.com/file/d/1EaEutey4NPwl92M7OZsCerBC6HfUaWNZ/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -5,6 +5,9 @@
   height: 80px;
   padding: 0 40px;
 }
+.nav-right a:not(:last-child) {
+  margin-right: 5px;
+}
 
 .nav-left {
   display: flex;
@@ -19,24 +22,25 @@
   font-family: "Nunito";
   margin-right: 18px;
 }
+
 .nav-left a.active {
   font-weight: bold;
   color: #946247;
 }
 
-
 .nav-right {
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-right a {
+  display: flex;
+  align-items: center;
 }
 
 .nav-right img {
   height: 40px;
-  display: block;
-  margin: auto;
-}
-
-.dropdown-icon {
-  display: none;
 }
 
 .dropdown-menu {
@@ -59,7 +63,6 @@
   font-family: 'Nunito', Helvetica;
   font-size: 16px;
   margin-bottom: 10px;
-  
 }
 
 .hamburger {
