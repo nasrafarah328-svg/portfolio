@@ -52,7 +52,7 @@ function Navbar() {
         </a>
       </div>
       <div className="nav-right">
-        <a href="https://github.com/Fara0197" rel="noreferrer" target="_blank">
+        <a href="https://www.linkedin.com/in/nasra-farah-7033991aa/" rel="noreferrer" target="_blank">
           <img className="selection-github" src={"Link.svg"} alt="" />
         </a>
         <a href="https://github.com/Fara0197" rel="noreferrer" target="_blank">
