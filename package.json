@@ -39,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Fara0197/nasra-farah.git",
+  "author": "Nasra <fara0197@algonquinlive.com>",
+  "license": "MIT"
 }
