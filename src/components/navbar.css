@@ -4,6 +4,7 @@
   align-items: center;
   height: 80px;
   padding: 0 40px;
+  background-color: #ffffffd4; 
 }
 .nav-right a:not(:last-child) {
   margin-right: 5px;
@@ -24,9 +25,9 @@
 }
 
 .nav-left a.active {
-  text-decoration: underline;
+
   font-weight: bold;
-  color: #946247;
+  color: #946247be;
 }
 
 .nav-right {
