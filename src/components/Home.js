@@ -50,15 +50,9 @@ function Home() {
       </div>
 
       <div className="selection-bottom-screen">
-        {" "}
         <div className="selection-row-header-container">
-          <h1 className="selection-row-header">My Skills</h1>{" "}
-          <p className="selection-row-text">
-            <Link to="./work">
-              view my recent work <HiOutlineArrowLongRight />{" "}
-            </Link>
-          </p>
-        </div>{" "}
+          <h1 className="selection-row-header">My Skills</h1>
+        </div>
         <div className="selection-main-home-rows">
           <div className="selection-row">
             <img src="ux.png" alt="UX/UI Design" />
@@ -77,6 +71,14 @@ function Home() {
           </div>
 
         </div>
+        <div className="selection-row-header-container">
+          <h1 className="selection-row-header">Recent Work</h1>{" "}
+          <p className="selection-row-text">
+            <Link to="./work">
+              view my recent work <HiOutlineArrowLongRight />{" "}
+            </Link>
+          </p>
+        </div>{" "}
       </div>
     </motion.div>
   );
