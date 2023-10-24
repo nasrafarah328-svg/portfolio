@@ -115,6 +115,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: left;
   background-color: #fef7f0;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -122,6 +123,10 @@
   text-align: center;
 }
 
+.selection-row-text{
+display: flex;
+text-align: justify;
+}
 
 
 .selection-row img {
@@ -151,7 +156,8 @@
   margin: 20px;
 }
 .selection-row-paragraph {
-  font-size: 16px;
+  color: #653c18;
+  font-size: 14px;
   margin: 0 20px 20px;
 }
 .skills-icon{

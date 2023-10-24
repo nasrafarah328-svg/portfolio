@@ -56,20 +56,32 @@ function Home() {
         <div className="selection-main-home-rows">
           <div className="selection-row">
             <img src="ux.png" alt="UX/UI Design" />
-            <h2 className="selection-row-sub-header">UX / UI Design</h2>
-            <p className="selection-row-paragraph">
-              
-            </p>
-          </div>
-    
-          <div className="selection-row">
-            <img src="mobile.png" alt="Mobile Development" />
-            <h2 className="selection-row-sub-header">Mobile / Web Development</h2>
-            <p className="selection-row-paragraph">
-             
-            </p>
+            <div className="selection-row-text">
+              <h2 className="selection-row-sub-header">UX / UI Design</h2>
+              <p className="selection-row-paragraph">
+                Experienced in creating intuitive and visually engaging user
+                experiences through wireframing, prototyping, user research, and
+                a strong grasp of design principles and design tools such as Adobe Creative Suite and
+                Figma.
+              </p>
+            </div>
           </div>
 
+          <div className="selection-row">
+            <img src="mobile.png" alt="Mobile Development" />
+            <div className="selection-row-text">
+              {" "}
+              <h2 className="selection-row-sub-header">
+                Mobile / Web Development
+              </h2>
+              <p className="selection-row-paragraph">
+                I specialize in HTML, CSS, JavaScript, React, Node.js,
+                Express.js, Next.js, API integration, and ensuring accessibility
+                with WCAG standards. And obtained knowledge in React Native,
+                Swift, Flutter, and Java for mobile app development.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="selection-row-header-container">
           <h1 className="selection-row-header">Recent Work</h1>{" "}
