@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./work.css";
-
 const projects = [
   {
     title: "Hello Dear",
@@ -95,11 +94,26 @@ function CustomPagination() {
   };
 
   return (
+    
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+
+<div className="pagination">
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index}
+            className={`pagination-item ${
+              currentPage === index + 1 ? "active" : ""
+            }`}
+            onClick={() => handlePageChange(index + 1)}
+          >
+            {index + 1}
+          </button>
+        ))}
+      </div>
       <div className="selection-projects">
         {currentProjects.map((project, index) => (
           <Project
@@ -117,19 +131,7 @@ function CustomPagination() {
         ))}
       </div>
 
-      <div className="pagination">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index}
-            className={`pagination-item ${
-              currentPage === index + 1 ? "active" : ""
-            }`}
-            onClick={() => handlePageChange(index + 1)}
-          >
-            {index + 1}
-          </button>
-        ))}
-      </div>
+  
     </motion.div>
   );
 }
