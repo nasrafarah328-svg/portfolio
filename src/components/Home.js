@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
 import { motion } from "framer-motion";
-import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 function Home() {
   return (
@@ -20,7 +19,7 @@ function Home() {
           </h1>
           <p className="selection-UX-front-end-developer">
             <span className="selection-text-wrapper-three"> UX Designer </span>
-            <span className="selection-text-wrapper-four">and</span>
+            <span className="selection-text-wrapper-four">&</span>
             <span className="selection-text-wrapper-three">
               {" "}
               Front End Developer
@@ -32,14 +31,11 @@ function Home() {
             user-friendly digital applications.
             <br></br>
             <br></br>
-            <a
-              className="contact-button"
-              href="https://drive.google.com/file/d/1eEjDZM7n8CBXYo0S2v_5JuLwx6UMAPC2/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View my CV/Resume.
-            </a>
+            <p className="contact-button">
+            <Link to="./work">
+              View my recent work.
+            </Link>
+          </p>
           </p>
         </div>
         <img
@@ -52,11 +48,7 @@ function Home() {
       <div className="selection-bottom-screen">
         <div className="selection-row-header-container">
           <h1 className="selection-row-header">My Skills</h1>
-          <p className="selection-row-text">
-            <Link to="./work">
-              view my recent work <HiOutlineArrowLongRight />{" "}
-            </Link>
-          </p>
+          
         </div>
         <div className="selection-main-home-rows">
           <div className="selection-row">

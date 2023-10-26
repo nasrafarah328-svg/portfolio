@@ -4,7 +4,6 @@
   align-items: center;
   height: 80px;
   padding: 0 40px;
-  background-color: #ffffffd4; 
 }
 .nav-right a:not(:last-child) {
   margin-right: 5px;
@@ -25,7 +24,6 @@
 }
 
 .nav-left a.active {
-
   font-weight: bold;
   color: #946247be;
 }
@@ -62,7 +60,7 @@
 .dropdown-menu a {
   text-decoration: none;
   color: #111;
-  font-family: 'Nunito', Helvetica;
+  font-family: "Nunito", Helvetica;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -93,7 +91,7 @@
 .dropdown-menu a {
   text-decoration: none;
   color: #111;
-  font-family: 'Nunito', Helvetica;
+  font-family: "Nunito", Helvetica;
   font-size: 1.2rem;
   margin-bottom: 10px;
   transition: all 0.2s ease-in-out;
@@ -127,7 +125,7 @@
   .dropdown-menu a {
     text-decoration: none;
     color: #111;
-    font-family: 'Nunito', Helvetica;
+    font-family: "Nunito", Helvetica;
     margin-bottom: 12px;
     font-weight: 700;
   }

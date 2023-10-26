@@ -10,54 +10,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px;
+  padding: 100px 20px;
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 .selection-text-content {
   padding: 10px 50px;
   position: relative;
-  max-width: 800px;
+  max-width: 500px;
   text-align: center;
 }
 
 .selection-hi-name {
+  font-size: 40px;
   font-family: "Raleway";
-  font-size: 35px;
-  margin-bottom: 0.5rem;
+
 }
 
 .selection-text-wrapper-two {
-
+  font-size: 40px;
   font-family: "Raleway";
 }
 .selection-text-wrapper-four {
-  font-size: 26px;
+  font-size: 40px;
   font-weight: 600;
   color: #8c5a2e;
   font-family: "Raleway";
 }
 
 .selection-text-wrapper {
+  font-size: 40px;
   font-family: "Raleway";
 }
 
 .selection-paragraph {
-  font-size: 1px;
   max-width: 400px;
-  font-weight: 300;
+  font-weight: 100;
   font-family: "Nunito";
 }
 
-.selection-UX-front-end-developer {
-  font-size: 30px;
-  font-weight: 600;
-}
 
 .selection-text-wrapper-three {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 400;
   font-family: "Raleway";
 }
@@ -81,15 +77,15 @@
 .contact-button {
   font-weight: 500;
   cursor: pointer;
-  background-color: rgb(255, 248, 242);
 }
 
-.selection-bottom-screen{
+.selection-bottom-screen {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1300px;
- 
+  max-width: 1200px;
+  padding: 20px; 
+  overflow: hidden; 
 }.selection-main-home-rows {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -114,8 +110,6 @@
 .selection-row {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: left;
   background-color: #fef7f0;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -137,12 +131,11 @@ text-align: justify;
 
 .selection-row-header {
   font-family: "Raleway";
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   margin: 20px;
 }
 .selection-row-text{
-  background-color: rgb(255, 248, 242);
   display: inline;
   font-family: "Raleway";
   font-size: 16px;
@@ -156,22 +149,22 @@ text-align: justify;
   margin: 20px;
 }
 .selection-row-paragraph {
-  color: #653c18;
+  color: #713b0d;
   font-size: 14px;
   margin: 0 20px 20px;
 }
 .skills-icon{
   margin: 0 5px;
 }
+
 @media screen and (min-width: 768px) {
   .selection-main-home-banner {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 150px 20px;
     position: relative;
     width: 100%;
-    max-width: 1550px;
+    max-width: 3000px;
   }
   
   .selection-text-content {
