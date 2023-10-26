@@ -19,7 +19,7 @@ const projects = [
 
   {
     title: "Music Playlist",
-    headerQuote: "A simple MP3 personalized playlist.",
+    headerQuote: "A simple web MP3 personalized playlist.",
     subTitle: "About",
     description:
     "The Music Playlist is a fully functional HTML5 music player designed to provide an immersive and seamless music listening experience. With its user-friendly interface, users can effortlessly play and control a personalized playlist of MP3 files. The player boasts a mobile-first design, ensuring optimal performance on various devices, and is enhanced with captivating CSS animations that enhance the visual appeal.",
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: "CareSpace",
-    headerQuote: "Senior Care App Case Study.",
+    headerQuote: "Senior Care App UX Case Study.",
     subTitle: "About",
     nextDescription:
     "By putting the needs and preferences of seniors and caregivers at the forefront, I successfully crafted a senior care app that promotes ease of use, accessibility, and overall well-being.",
@@ -101,6 +101,7 @@ function CustomPagination() {
       exit={{ opacity: 0 }}
     >
 
+
 <div className="pagination">
         {Array.from({ length: totalPages }, (_, index) => (
           <button
@@ -115,6 +116,7 @@ function CustomPagination() {
         ))}
       </div>
       <div className="selection-projects">
+      <h1>Projects</h1>
         {currentProjects.map((project, index) => (
           <Project
             key={index}
