@@ -4,7 +4,7 @@ import "./work.css";
 const projects = [
   {
     title: "Hello Dear",
-    headerQuote: "A mobile app that enhances senior well-being.",
+    headerQuote: "An app for enhancing the well-being of seniors on iOS and Android, built using React Native.",
     subTitle: "About",
     description:
       "Throughout my role as a UX/Front End Developer, I applied a range of technical skills to drive successful outcomes. I implemented accessibility best practices, ensuring a seamless experience for senior users. By actively incorporating client feedback into design iterations, I delivered tailored solutions that met their specific needs",
@@ -40,7 +40,7 @@ const projects = [
    
     imageSrc: "carespace.png",
     githubLink:
-      "https://docs.google.com/presentation/d/142ijd0A59bza0p0cSW5b2Cp_3g6fa-fH8Zx5KHzjtRM/edit?usp=share_link",
+      "https://drive.google.com/drive/folders/16tBxBqwtovb-g7hPP73U_c2EOQAS349C?usp=sharing",
   },
 ];
 
