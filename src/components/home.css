@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #FFFCF9 !important;
+  background-color: #fff9f38c !important;
 }
 
 .selection-main-home-banner {
@@ -92,7 +92,7 @@
   gap: 20px;
   width: 100%;
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
 @media screen and (min-width: 768px) {
