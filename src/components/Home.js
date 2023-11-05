@@ -41,7 +41,7 @@ function Home() {
         <img
           className="selection-home-image"
           alt={"homeimage"}
-          src={"Home-Image.svg"}
+          src={"nasra-image.svg"}
         />
       </div>
 
