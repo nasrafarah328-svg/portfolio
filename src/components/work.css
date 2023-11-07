@@ -102,6 +102,7 @@
 }
 
 .pagination-item.active {
+  color: black;
   background-color: #EFE1D2;
 }
 

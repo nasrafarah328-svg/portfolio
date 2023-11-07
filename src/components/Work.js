@@ -42,6 +42,21 @@ const projects = [
     githubLink:
       "https://drive.google.com/drive/folders/16tBxBqwtovb-g7hPP73U_c2EOQAS349C?usp=sharing",
   },
+  
+  {
+    title: "Fresh Mart",
+    headerQuote: "My First Case Study: Grocery Store Checkout.",
+    subTitle: "About",
+    nextDescription:
+    "I tackle the user issues surrounding grocery store self-checkouts. With a keen focus on usability heuristics, system status visibility, and recognition over recall.",
+    description:
+      "Embark on a deep dive into my first case study, where I share the journey of improving the grocery store self-checkout experience. Discover how I addressed usability, system status, and recognition issues, ensuring a smoother, more intuitive process for shoppers. Click the link below to explore the transformative potential of user-centered design in the realm of grocery self-checkouts.",
+   
+    imageSrc: "grocery.png",
+    githubLink:
+      "https://drive.google.com/drive/folders/16llj9yx8bKDZOyiLl-Q9PPRgPJnEKerV?usp=drive_link",
+  },
+
 ];
 
 function Project({
@@ -65,7 +80,7 @@ function Project({
         <p className="selection-project-moreText">{moreText}</p>
         <h5 className="github-link">
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            View More
+            View Project
           </a>
         </h5>
       </div>
