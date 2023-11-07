@@ -3,13 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff9f38c !important;
+  /* background-color: #fff9f38c !important; */
 }
 
 .selection-main-home-banner {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   padding: 100px 20px;
   position: relative;
   width: 100%;
@@ -24,7 +25,7 @@
 }
 
 .selection-hi-name {
-  font-size: 40px;
+  font-size: 20px;
   font-family: "Raleway";
 
 }
@@ -34,9 +35,9 @@
   font-family: "Raleway";
 }
 .selection-text-wrapper-four {
-  font-size: 40px;
-  font-weight: 600;
-  color: #8c5a2e;
+  font-size: 30px;
+  font-weight: 400;
+  color: #643e1d;
   font-family: "Raleway";
 }
 
@@ -53,19 +54,19 @@
 
 
 .selection-text-wrapper-three {
-  font-size: 35px;
-  font-weight: 400;
-  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 100;
+  font-family: "Nunito";
 }
 .selection-text-wrapper-five {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "Raleway";
 }
 
 .selection-home-image {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .selection-selection-wrapper {
   background-color: transparent;
@@ -75,7 +76,7 @@
   align-items: center;
 }
 .contact-button {
-  font-weight: 500;
+  font-weight: 300;
   cursor: pointer;
 }
 
@@ -83,16 +84,19 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   padding: 20px; 
   overflow: hidden; 
+
 }.selection-main-home-rows {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   width: 100%;
   max-width: 1200px;
-  padding: 20px 20px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fffcf98c;
 }
 
 @media screen and (min-width: 768px) {
@@ -110,9 +114,8 @@
 .selection-row {
   display: flex;
   flex-direction: column;
-  background-color: #fef7f0;
+  background-color:#fff5ea79;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./home.css";
 import { motion } from "framer-motion";
 
@@ -19,7 +18,7 @@ function Home() {
           </h1>
           <p className="selection-UX-front-end-developer">
             <span className="selection-text-wrapper-three"> UX Designer </span>
-            <span className="selection-text-wrapper-four">&</span>
+            <span className="selection-text-wrapper-four">and</span>
             <span className="selection-text-wrapper-three">
               {" "}
               Front End Developer
@@ -32,9 +31,9 @@ function Home() {
             <br></br>
             <br></br>
             <p className="contact-button">
-            <Link to="./work">
-              View my recent work.
-            </Link>
+            <a href="https://drive.google.com/file/d/1iUZbcgKCF-EVD_KeUfnkD2j1UCF3O0TQ/view?usp=drive_link"target="_blank" rel="noreferrer">
+              My Resume.
+            </a>
           </p>
           </p>
         </div>
