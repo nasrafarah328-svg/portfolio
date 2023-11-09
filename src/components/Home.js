@@ -68,7 +68,7 @@ function Home() {
             <div className="selection-row-text">
               {" "}
               <h2 className="selection-row-sub-header">
-                Mobile / Web Development
+                Mobile / Web Development & Design
               </h2>
               <p className="selection-row-paragraph">
                 I specialize in HTML, CSS, JavaScript, React, Node.js,
