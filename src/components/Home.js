@@ -17,7 +17,7 @@ function Home() {
             <span className="selection-text-wrapper-two">Nasra</span>
           </h1>
           <p className="selection-UX-front-end-developer">
-            <span className="selection-text-wrapper-three"> UX Designer </span>
+            <span className="selection-text-wrapper-three"> UX / UI Designer </span>
             <span className="selection-text-wrapper-four">and</span>
             <span className="selection-text-wrapper-three">
               {" "}
