@@ -8,7 +8,7 @@ function App() {
     <div
       style={{
         backgroundColor: "#FFFDFA",
-        height: "100vh",
+        
       }}
     >
       <Router>
