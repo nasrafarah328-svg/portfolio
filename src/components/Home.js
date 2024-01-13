@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css";
 import { motion } from "framer-motion";
 
+
 function Home() {
   return (
     <motion.div
@@ -17,8 +18,8 @@ function Home() {
             <span className="selection-text-wrapper-two">Nasra</span>
           </h1>
           <p className="selection-UX-front-end-developer">
-            <span className="selection-text-wrapper-three">Designer </span>
-            <span className="selection-text-wrapper-four">and</span>
+            <span className="selection-text-wrapper-three"> Junior Designer </span>
+            <span className="selection-text-wrapper-four">/</span>
             <span className="selection-text-wrapper-three">
               {" "}
               Front End Developer
@@ -32,7 +33,7 @@ function Home() {
             <br></br>
             <p className="contact-button">
             <a href="https://drive.google.com/file/d/1iUZbcgKCF-EVD_KeUfnkD2j1UCF3O0TQ/view?usp=drive_link"target="_blank" rel="noreferrer">
-              My Resume.
+              Latest Project
             </a>
           </p>
           </p>
@@ -78,8 +79,16 @@ function Home() {
               </p>
             </div>
           </div>
+
+
+          
         </div>
       </div>
+
+
+
+
+
     </motion.div>
   );
 }

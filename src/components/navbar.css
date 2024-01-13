@@ -5,6 +5,7 @@
   height: 80px;
   padding: 0 40px;
 }
+
 .nav-right a:not(:last-child) {
   margin-right: 5px;
 }
@@ -49,12 +50,15 @@
   left: 0;
   right: 0;
   background-color: #fff;
-  padding: 20px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   z-index: 1;
+}
+
+.nav-right:hover .dropdown-menu {
+  display: flex;
 }
 
 .dropdown-menu a {
@@ -63,6 +67,10 @@
   font-family: "Nunito", Helvetica;
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+.dropdown-menu a:hover {
+  color: #0077cc;
 }
 
 .hamburger {
@@ -86,19 +94,6 @@
   height: 2px;
   width: 100%;
   transition: all 0.2s ease-in-out;
-}
-
-.dropdown-menu a {
-  text-decoration: none;
-  color: #111;
-  font-family: "Nunito", Helvetica;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  transition: all 0.2s ease-in-out;
-}
-
-.dropdown-menu a:hover {
-  color: #0077cc;
 }
 
 @media only screen and (max-width: 768px) {
