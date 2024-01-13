@@ -65,10 +65,7 @@
   font-family: "Raleway";
 }
 
-.selection-home-image {
 
- 
-}
 .selection-selection-wrapper {
   background-color: transparent;
   display: flex;
@@ -77,7 +74,7 @@
   align-items: center;
 }
 .contact-button {
-  font-weight: 300;
+  font-weight: 600;
   cursor: pointer;
 }
 

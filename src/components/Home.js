@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import "./home.css";
 import { motion } from "framer-motion";
-
 
 function Home() {
   return (
@@ -18,7 +18,10 @@ function Home() {
             <span className="selection-text-wrapper-two">Nasra</span>
           </h1>
           <p className="selection-UX-front-end-developer">
-            <span className="selection-text-wrapper-three"> Junior Designer </span>
+            <span className="selection-text-wrapper-three">
+              {" "}
+              Junior Designer{" "}
+            </span>
             <span className="selection-text-wrapper-four">/</span>
             <span className="selection-text-wrapper-three">
               {" "}
@@ -32,10 +35,13 @@ function Home() {
             <br></br>
             <br></br>
             <p className="contact-button">
-            <a href="https://drive.google.com/file/d/1iUZbcgKCF-EVD_KeUfnkD2j1UCF3O0TQ/view?usp=drive_link"target="_blank" rel="noreferrer">
-              Latest Project
-            </a>
-          </p>
+              <Link
+                to="javascript:void(0)"
+                onClick={() => (window.location = "mailto:nasrafarah328@gmail.com")}
+              >
+                Contact Me
+              </Link>
+            </p>
           </p>
         </div>
         <img
@@ -48,7 +54,6 @@ function Home() {
       <div className="selection-bottom-screen">
         <div className="selection-row-header-container">
           <h1 className="selection-row-header">My Skills</h1>
-          
         </div>
         <div className="selection-main-home-rows">
           <div className="selection-row">
@@ -58,8 +63,8 @@ function Home() {
               <p className="selection-row-paragraph">
                 Experienced in creating intuitive and visually engaging user
                 experiences through wireframing, prototyping, user research, and
-                a strong grasp of design principles and design tools such as Adobe Creative Suite and
-                Figma.
+                a strong grasp of design principles and design tools such as
+                Adobe Creative Suite and Figma.
               </p>
             </div>
           </div>
@@ -79,16 +84,8 @@ function Home() {
               </p>
             </div>
           </div>
-
-
-          
         </div>
       </div>
-
-
-
-
-
     </motion.div>
   );
 }
