@@ -5,8 +5,7 @@ import "./work.css";
 const projects = [
   {
     title: "Hello Dear",
-    headerQuote:
-      "An app for enhancing the well-being of seniors.",
+    headerQuote: "An app for enhancing the well-being of seniors.",
     subTitle: "Mobile App",
     imageSrc: "hello-dear.png",
     githubLink:
@@ -37,29 +36,29 @@ const projects = [
     githubLink:
       "https://drive.google.com/drive/folders/16llj9yx8bKDZOyiLl-Q9PPRgPJnEKerV?usp=drive_link",
   },
+
+  {
+    title: "Personal Goals",
+    headerQuote: "A simple React app for creating a list of goals.",
+    subTitle: "Front End / React Development",
+    imageSrc: "react-goals.png",
+    githubLink: "https://october-goals.netlify.app/",
+  },
 ];
 
-function Project({
-  title,
-  headerQuote,
-  subTitle,
-  description,
-  nextDescription,
-  moreText,
-  imageSrc,
-  githubLink,
-}) {
+function Project({ title, headerQuote, subTitle, imageSrc, githubLink }) {
   return (
     <div className="selection-project-wrapper">
       <div className="selection-project-text">
         <h2 className="selection-project-title">{title}</h2>
+        <h4 className="selection-project-subTitle">{subTitle}</h4>
         <h2 className="selection-project-headerQuote">{headerQuote}</h2>
+
         <h3 className="github-link">
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
             <span className="github-text">View Project</span> <BsArrowUpRight />
           </a>
         </h3>
-      <h4 className="selection-project-subTitle">{subTitle}</h4>
       </div>
       <div className="selection-project-image">
         <img className="selection-project-image" src={imageSrc} alt={title} />
@@ -76,12 +75,12 @@ function CustomPagination() {
       exit={{ opacity: 0 }}
     >
       <div className="selection-projects">
-      
         <div className="columns">
           {projects.map((project, index) => (
             <Project
               key={index}
               title={project.title}
+              subTitle={project.subTitle}
               headerQuote={project.headerQuote}
               imageSrc={project.imageSrc}
               githubLink={project.githubLink}
@@ -89,8 +88,6 @@ function CustomPagination() {
           ))}
         </div>
       </div>
-      
-    
     </motion.div>
   );
 }
