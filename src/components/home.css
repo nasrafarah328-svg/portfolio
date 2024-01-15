@@ -25,6 +25,12 @@
   width: 100%;
   max-width: 1400px;
 }
+.colored-line {
+  height: 2px;
+  background-color: #e4d4c8b1;
+  width: 60%; 
+
+}
 
 .selection-text-content {
   padding: 10px 50px;

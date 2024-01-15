@@ -60,7 +60,9 @@ function Home() {
           src={"nasra-image.svg"}
         />
       </div>
-
+      <div className="colored-line">
+      <br />
+    </div>
       <div className="selection-bottom-screen">
         <div className="selection-row-header-container">
           <h1 className="selection-row-header">My Skills</h1>
