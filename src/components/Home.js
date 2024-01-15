@@ -4,11 +4,10 @@ import "./home.css";
 import { motion } from "framer-motion";
 
 function Home() {
-
   const handleContactClick = () => {
     window.location.href = "mailto:nasrafarah328@gmail.com";
   };
-  
+
   return (
     <motion.div
       className="selection-selection-wrapper"
@@ -39,11 +38,20 @@ function Home() {
             user-friendly digital applications.
             <br></br>
             <br></br>
-            <p className="contact-button">
-      <Link to="#" onClick={handleContactClick}>
-        Contact Me
-      </Link>
-    </p>
+            <div className="contact-resume-buttons">
+              {" "}
+              <p className="contact-button">
+                <Link to="#" onClick={handleContactClick}>
+                   Contact Me
+                </Link>
+              </p>
+              <p className="resume-button">
+                <a href ="https://drive.google.com/file/d/17Nc4CZXim2RXNW95WvYfHyIouhaGRWWk/view?usp=drive_link">
+                 
+                  Resume
+                </a>
+              </p>
+            </div>
           </p>
         </div>
         <img
