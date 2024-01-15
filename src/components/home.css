@@ -157,6 +157,11 @@ text-align: justify;
 .skills-icon{
   margin: 0 5px;
 }
+.selection-home-image {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 @media screen and (min-width: 768px) {
   .selection-main-home-banner {
@@ -175,6 +180,7 @@ text-align: justify;
     text-align: left;
   }
   .selection-home-image {
+    display: block;
     margin-top: 0;
     margin-bottom: 0;
   }
