@@ -101,17 +101,13 @@ function CustomPagination() {
       exit={{ opacity: 0 }}
     >
       <div className="selection-projects">
-        <h1>Projects</h1>
+      
         <div className="columns">
           {projects.map((project, index) => (
             <Project
               key={index}
               title={project.title}
               headerQuote={project.headerQuote}
-              subTitle={project.subTitle}
-              description={project.description}
-              nextDescription={project.nextDescription}
-              moreText={project.moreText}
               imageSrc={project.imageSrc}
               githubLink={project.githubLink}
             />
@@ -120,7 +116,7 @@ function CustomPagination() {
       </div>
       
       {/* Updated section for GitHub as a responsive footer */}
-      <div className="github-section">
+      {/* <div className="github-section">
         <h2>Explore More Projects on GitHub</h2>
         <div className="github-link-container">
           <a
@@ -132,7 +128,7 @@ function CustomPagination() {
             <span className="github-text">Visit My GitHub</span> <BsArrowUpRight />
           </a>
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 }
