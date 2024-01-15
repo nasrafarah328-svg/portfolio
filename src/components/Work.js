@@ -17,7 +17,7 @@ const projects = [
     title: "Music Playlist",
     headerQuote: "A simple web MP3 personalized playlist.",
     subTitle: "Web Design / Development ",
-    imageSrc: "music.png",
+    imageSrc: "music-player.png",
     githubLink: "https://nasra-playlist.netlify.app/",
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     title: "Fresh Mart",
     headerQuote: "My First Case Study: Grocery Store Checkout.",
     subTitle: "UX / UI Design",
-    imageSrc: "grocery.png",
+    imageSrc: "fresh-mart.png",
     githubLink:
       "https://drive.google.com/drive/folders/16llj9yx8bKDZOyiLl-Q9PPRgPJnEKerV?usp=drive_link",
   },
