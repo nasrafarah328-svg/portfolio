@@ -14,7 +14,7 @@ function About() {
             <span className="selection-text-wrapper-three">About Me</span>
           </p>
           <p className="selection-paragraph">
-            Hi there! my name is Nasra Farah. I am a mobile and web designer & developer
+           Hello, my name is Nasra. I am a junior designer & front end developer
             based in Ottawa, Ontario. I am a recent graduate from Algonquin
             College's{" "}
             <span className="selection-text-wrapper-five">
@@ -28,10 +28,9 @@ function About() {
               </a>
             </span>{" "}
             <br></br>
-            <br></br> My passion lies in creating stunning and seamless user
+            <br></br> My passion lies in creating stunning and seamless web and mobile user
             interfaces. My proficiency in various programming languages,
-            including Javascript and React, allows me to develop robust and
-            dynamic web and mobile applications. Additionally, I have experience
+            including HTML, CSS Javascript, and React. Additionally, I have experience
             using Figma, a popular design tool, to create wireframes,
             prototypes, and high-fidelity designs. For more details on my skills
             and experience, please see my{" "}
