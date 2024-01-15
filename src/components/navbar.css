@@ -43,6 +43,45 @@
 .nav-right img {
   height: 40px;
 }
+.mobile-dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.exit-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Nunito", Helvetica;
+  font-size: 16px;
+  color:#3f230b;
+  opacity: 0.8;
+  margin-bottom: 15px; /* Adjust the value as needed for spacing */
+}
+.exit-button:hover{
+opacity: 1;
+}
+
+.mobile-dropdown a {
+  text-decoration: none;
+  color: #111;
+  font-family: "Nunito", Helvetica;
+  font-size: 16px;
+  margin-bottom: 20px; /* Adjust the value as needed for spacing */
+}
+
+.mobile-dropdown a:hover {
+  color: #3f230b;
+}
 
 .dropdown-menu {
   position: absolute;
@@ -55,9 +94,11 @@
   align-items: center;
   gap: 10px;
   z-index: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .nav-right:hover .dropdown-menu {
+  opacity: 1;
   display: flex;
 }
 
@@ -70,7 +111,7 @@
 }
 
 .dropdown-menu a:hover {
-  color: #0077cc;
+    color: #3f230b;
 }
 
 .hamburger {
@@ -88,6 +129,7 @@
   width: 24px;
   padding: 0;
 }
+
 
 .hamburger-line {
   background-color: #111;

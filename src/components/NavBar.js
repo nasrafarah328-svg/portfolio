@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { IoClose } from "react-icons/io5";
 import "./navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const location = useLocation();
+  const [currentURL, setCurrentURL] = useState("");
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 768px)");
@@ -21,54 +25,64 @@ function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    setCurrentURL(location.pathname);
+  }, [location]);
+
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  const [currentUrl, setCurrentUrl] = useState("");
-
-  useEffect(() => {
-    setCurrentUrl(window.location.pathname);
-  }, []);
+  const closeDropdown = () => {
+    setIsOpen(false);
+  };
 
   const isActive = (url) => {
-    return url === currentUrl ? "active" : "";
+    return url === currentURL ? "active" : "";
   };
+
+  useEffect(() => {
+    setIsOpen(false);
+    setCurrentURL(location.pathname);
+  }, [location.pathname]);
 
   return (
     <nav className="nav">
-      <div
-        className="nav-left"
-        style={{ display: isSmallScreen ? "none" : "flex" }}
-      >
-        <a href="/" className={isActive("/")}>
+      <div className="nav-left" style={{ display: isSmallScreen ? "none" : "flex" }}>
+        <Link to="/" className={isActive("/")}>
           Home
-        </a>
-        <a href="/about" className={isActive("/about")}>
+        </Link>
+        <Link to="/about" className={isActive("/about")}>
           About
-        </a>
-        <a href="/work" className={isActive("/work")}>
+        </Link>
+        <Link to="/work" className={isActive("/work")}>
           Work
-        </a>
+        </Link>
       </div>
       <div className="nav-right">
         <a href="https://www.linkedin.com/in/nasra-farah-7033991aa/" rel="noreferrer" target="_blank">
-          <img className="selection-github" src={"Link.svg"} alt="" />
+          <img className="selection-github" src={"Link.svg"} alt="LinkedIn" />
         </a>
         <a href="https://github.com/Fara0197" rel="noreferrer" target="_blank">
-          <img src={"Github.svg"} alt="" />
+          <img src={"Github.svg"} alt="GitHub" />
         </a>
       </div>
 
-      <div
-        className="nav-right"
-        style={{ display: isSmallScreen ? "flex" : "none" }}
-      >
+      <div className="nav-right" style={{ display: isSmallScreen ? "flex" : "none" }}>
         {isOpen && (
-          <div className="dropdown-menu">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/work">Work</a>
+          <div className="mobile-dropdown">
+            <button className="exit-button" onClick={closeDropdown}>
+            <IoClose />
+            </button>
+            <Link to="/" onClick={closeDropdown}>
+              Home
+            </Link>
+            <Link to="/about" onClick={closeDropdown}>
+              About
+            </Link>
+            <Link to="/work" onClick={closeDropdown}>
+              Work
+            </Link>
           </div>
         )}
         <button className="dropdown-button" onClick={toggleDropdown}>

@@ -43,5 +43,8 @@
   "main": "index.js",
   "repository": "https://github.com/Fara0197/nasra-farah.git",
   "author": "Nasra <fara0197@algonquinlive.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-plugin-jest": "^27.6.3"
+  }
 }
