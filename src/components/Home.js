@@ -24,18 +24,20 @@ function Home() {
           <p className="selection-UX-front-end-developer">
             <span className="selection-text-wrapper-three">
               {" "}
-              Junior Designer{" "}
+              IT Technician{" "}
             </span>
             <span className="selection-text-wrapper-four">/</span>
             <span className="selection-text-wrapper-three">
               {" "}
-              Front End Developer
+              Designer - Front End Developer
             </span>
           </p>
 
           <p className="selection-paragraph">
-            I am passionate about creating visually appealing, responsive, and
-            user-friendly digital applications.
+          I provide IT support within the federal government, 
+      with experience in troubleshooting, digital evidence handling, and data management. 
+      Alongside my IT work, I enjoy creating visually engaging, user-friendly digital 
+      applications through front-end development and design. 
             <br></br>
             <br></br>
             <div className="contact-resume-buttons">
@@ -46,8 +48,9 @@ function Home() {
                 </Link>
               </p>
               <p className="resume-button">
-                <a href ="https://drive.google.com/file/d/17Nc4CZXim2RXNW95WvYfHyIouhaGRWWk/view?usp=drive_link">
-                 
+              
+                <a target="_blank"  rel="noopener noreferrer" href="https://drive.google.com/file/d/1U1PWXV_l6msuaMV5QuoZdDbAHi-1DdII/view?usp=sharing">
+          
                   Resume
                 </a>
               </p>
@@ -57,7 +60,7 @@ function Home() {
         <img
           className="selection-home-image"
           alt={"homeimage"}
-          src={"nasra-image.svg"}
+          src={"nasra-2025.svg"}
         />
       </div>
       <div className="colored-line">
@@ -71,13 +74,13 @@ function Home() {
           <div className="selection-row">
             <img src="ux.png" alt="UX/UI Design" />
             <div className="selection-row-text">
-              <h2 className="selection-row-sub-header">UX / UI Design</h2>
+              <h2 className="selection-row-sub-header">IT Support</h2>
               <p className="selection-row-paragraph">
-                Experienced in creating intuitive and visually engaging user
-                experiences through wireframing, prototyping, user research, and
-                a strong grasp of design principles and design tools such as
-                Adobe Creative Suite and Figma.
-              </p>
+    Experienced IT Technician providing technical support in a federal government environment. 
+    Skilled in troubleshooting hardware and software issues, resolving user access problems, managing ticketing systems, 
+    and collaborating with multidisciplinary teams to ensure smooth IT operations. Adept at analyzing technical problems, implementing solutions, 
+    and maintaining accurate technical documentation.
+  </p>
             </div>
           </div>
 

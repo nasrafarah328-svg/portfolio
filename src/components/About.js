@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./about.css";
+
 function About() {
   return (
     <motion.div
@@ -14,64 +15,70 @@ function About() {
             <span className="selection-text-wrapper-three">About Me</span>
           </p>
           <p className="selection-paragraph">
-           Hello, my name is Nasra. I am a junior designer & front end developer
-            based in Ottawa, Ontario. I am a recent graduate from Algonquin
-            College's{" "}
+            Hello, my name is Nasra. I am currently building experience as an{" "}
+            <strong>IT Technician within the federal government</strong>, where
+            I focus on IT support, digital evidence handling, and technical
+            analysis. Alongside my IT work, I enjoy{" "}
+            <strong>design and front-end development</strong>—an area I studied
+            through Algonquin College’s{" "}
             <span className="selection-text-wrapper-five">
-              {" "}
               <a
                 href="https://www.algonquincollege.com/mediaanddesign/program/mobile-application-design-and-development/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Mobile Application Design and Development program.
+                Mobile Application Design and Development program
               </a>
-            </span>{" "}
+            </span>
+            .
             <br></br>
-            <br></br> My passion lies in creating stunning and seamless web and mobile user
-            interfaces. My proficiency in various programming languages,
-            including HTML, CSS Javascript, and React. Additionally, I have experience
-            using Figma, a popular design tool, to create wireframes,
-            prototypes, and high-fidelity designs. For more details on my skills
-            and experience, please see my{" "}
+            <br></br>
+            I am passionate about creating intuitive, responsive, and
+            user-friendly digital applications. My skills include{" "}
+            <strong>HTML, CSS, JavaScript, and React</strong>, as well as design
+            tools like <strong>Figma</strong> for wireframing, prototyping, and
+            building polished UI designs. For more details on my experience, you
+            can view my{" "}
             <span className="selection-text-wrapper-five">
-              {" "}
               <a
-                href="https://drive.google.com/file/d/1EaEutey4NPwl92M7OZsCerBC6HfUaWNZ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1U1PWXV_l6msuaMV5QuoZdDbAHi-1DdII/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                resume.
+                resume
               </a>
-            </span>{" "}
+            </span>
+            .
             <br></br>
-            <br></br>Beyond my design and development work, I'm also an avid
-            writer and published author. My experience in writing and
-            storytelling has helped me develop strong communication skills.
-            You can find some of my work  <span className="selection-text-wrapper-five">
-              {" "}
+            <br></br>
+            Outside of IT and design, I am also a{" "}
+            <strong>published author</strong>, which has strengthened my
+            communication and storytelling skills. Some of my writing can be
+            found{" "}
+            <span className="selection-text-wrapper-five">
               <a
                 href="https://www.amazon.ca/Nasra-Farah/e/B07SN51TTN/ref=aufs_dp_mata_dsk"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               here.
+                here
               </a>
-            </span>{" "}
+            </span>
+            .
             <br></br>
             <br></br>
-            Please feel free to  <span className="selection-text-wrapper-five">
-              {" "}
+            Please feel free to{" "}
+            <span className="selection-text-wrapper-five">
               <a
                 href="https://www.linkedin.com/in/nasra-farah-7033991aa/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               contact me.
+                contact me
               </a>
-            </span>{" "}if you're interested in discussing
-            potential employment opportunities. Thanks for visiting my
-            portfolio!
+            </span>{" "}
+            if you’d like to connect or discuss potential opportunities. Thanks
+            for visiting my portfolio!
           </p>
         </div>
       </div>
