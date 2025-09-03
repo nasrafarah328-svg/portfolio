@@ -49,21 +49,7 @@ function About() {
               </a>
             </span>
             .
-            <br></br>
-            <br></br>
-            Outside of IT and design, I am also a{" "}
-            <strong>published author</strong>, which has strengthened my
-            communication and storytelling skills. Some of my writing can be
-            found{" "}
-            <span className="selection-text-wrapper-five">
-              <a
-                href="https://www.amazon.ca/Nasra-Farah/e/B07SN51TTN/ref=aufs_dp_mata_dsk"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                here
-              </a>
-            </span>
+            
             .
             <br></br>
             <br></br>
