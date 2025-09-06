@@ -1,202 +1,243 @@
+/* =============================
+   Home Page Wrapper
+============================= */
 .selection-selection-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  /* background-color: #fff9f38c !important; */
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.contact-resume-buttons{
-  display: flex;
-  justify-content:flex-start;
-}
-.contact-resume-buttons p{ 
- display: inline-block;
- font-weight: 600;
- cursor: pointer;
-}
+
+/* =============================
+   Home Banner
+============================= */
 .selection-main-home-banner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 20px;
-  position: relative;
+  justify-content: center;
+  padding: 80px 20px;
   width: 100%;
-  max-width: 1400px;
-}
-.colored-line {
-  height: 2px;
-  background-color: #e4d4c8b1;
-  width: 60%; 
 }
 
 .selection-text-content {
-  padding: 10px 50px;
-  position: relative;
   max-width: 500px;
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.selection-home-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.selection-home-image {
+  width: 300px;
+  height: auto;
 }
 
 .selection-hi-name {
-  font-size: 20px;
   font-family: "Raleway";
-
-}
-
-.selection-text-wrapper-two {
   font-size: 40px;
-  font-family: "Raleway";
-}
-.selection-text-wrapper-four {
-  font-size: 30px;
-  font-weight: 400;
-  color: #643e1d;
-  font-family: "Raleway";
+  margin-bottom: 10px;
 }
 
 .selection-text-wrapper {
   font-size: 40px;
-  font-family: "Raleway";
+}
+
+.selection-text-wrapper-two {
+  font-size: 40px;
+}
+
+.selection-UX-front-end-developer {
+  font-family: "Nunito";
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .selection-paragraph {
-  max-width: 400px;
-  font-weight: 100;
   font-family: "Nunito";
-}
-
-
-.selection-text-wrapper-three {
-  font-size: 30px;
-  font-weight: 100;
-  font-family: "Nunito";
-}
-.selection-text-wrapper-five {
   font-size: 16px;
-  font-weight: 500;
-  font-family: "Raleway";
+  margin-bottom: 20px;
 }
 
-
-.selection-selection-wrapper {
-  background-color: transparent;
+.contact-resume-buttons {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contact-button {
-  margin-right: 15px;
+  gap: 15px;
+  justify-content: flex-start; /* buttons more to the left */
 }
 
-
-.selection-bottom-screen {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1250px;
-  padding: 20px; 
-  overflow: hidden; 
-
-}.selection-main-home-rows {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 30px;
-  width: 100%;
-  max-width: 1800px;
-  padding: 100 20px;
-
-  background-color: #fffcf98c;
-}
-
-@media screen and (min-width: 768px) {
-  .selection-main-home-rows {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .selection-main-home-rows {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.selection-row {
-  display: flex;
-  flex-direction: column;
-  background-color:#fff5ea79;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-}
-
-.selection-row-text{
-display: flex;
-text-align: justify;
-}
-
-
-.selection-row img {
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
-}
-
-.selection-row-header {
-  font-family: "Raleway";
-  font-size: 28px;
+.contact-button a,
+.resume-button a {
+  text-decoration: none;
   font-weight: 600;
-  margin: 20px;
-}
-.selection-row-text{
-  display: inline;
-  font-family: "Raleway";
-  font-size: 16px;
-  font-weight: 300;
-  margin: 20px;
-}
-.selection-row-sub-header{
-  font-family: "Raleway";
-  font-weight: 450;
-  font-size: 24px;
-  margin: 20px;
-}
-.selection-row-paragraph {
-  color: #713b0d;
-  font-size: 14px;
-  margin: 0 20px 20px;
-}
-.skills-icon{
-  margin: 0 5px;
-}
-.selection-home-image {
-  display: none;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 8px 15px;
+  background-color: #f5ede0;
+  border-radius: 8px;
+  color: #7b3f00;
 }
 
+.contact-button a:hover,
+.resume-button a:hover {
+  background-color: #e5d9cc;
+  color: #5a2e00;
+}
+
+/* Desktop: text left, image right */
 @media screen and (min-width: 768px) {
   .selection-main-home-banner {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    width: 100%;
-    max-width: 3000px;
   }
-  
   .selection-text-content {
-    padding: 60px 20px;
-    position: relative;
-    max-width: 800px;
     text-align: left;
+    max-width: 600px;
   }
-  .selection-home-image {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0;
+  .selection-home-image-wrapper {
+    max-width: 500px;
   }
+}
 
-  
+/* =============================
+   Colored Line
+============================= */
+.colored-line {
+  width: 60%;
+  height: 2px;
+  background-color: #e4d4c8b1;
+  margin: 20px 0;
+}
+
+/* =============================
+   Skills Carousel
+============================= */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: visible; /* buttons visible outside */
+  margin: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-card {
+  min-width: 280px;
+  max-width: 320px;
+  background-color: #fff5ea79;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.carousel-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.carousel-card.inactive {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.carousel-card h2 {
+  font-family: "Raleway";
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.carousel-card p {
+  font-family: "Nunito";
+  font-size: 14px;
+  color: #713b0d;
+}
+
+/* Navigation buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f3e5d0;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: -50px; /* always visible */
+}
+
+.carousel-btn.right {
+  right: -50px; /* always visible */
+}
+
+.carousel-btn:hover {
+  background: #e0c7a5;
+}
+
+/* =============================
+   Responsive
+============================= */
+@media screen and (max-width: 1024px) {
+  .carousel-card {
+    min-width: 250px;
+    max-width: 280px;
+  }
+  .carousel-btn.left {
+    left: -35px;
+  }
+  .carousel-btn.right {
+    right: -35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .selection-main-home-banner {
+    flex-direction: column;
+  }
+  .selection-text-content {
+    text-align: center;
+  }
+  .carousel-card {
+    min-width: 220px;
+    max-width: 240px;
+  }
+  .carousel-btn.left {
+    left: -25px;
+  }
+  .carousel-btn.right {
+    right: -25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-card {
+    min-width: 180px;
+    max-width: 200px;
+  }
+  .carousel-btn.left {
+    left: -15px;
+  }
+  .carousel-btn.right {
+    right: -15px;
+  }
 }
